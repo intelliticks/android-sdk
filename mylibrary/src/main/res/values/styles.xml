@@ -1,0 +1,39 @@
+<resources>
+
+  <style name="IntelliticksWebViewTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="colorPrimary">@color/finestWhite</item>
+    <item name="colorPrimaryDark">@color/finestGray</item>
+    <item name="colorAccent">@color/finestBlack</item>
+    <item name="android:textColorPrimary">@color/finestBlack</item>
+    <item name="android:textColorSecondary">@color/finestSilver</item>
+    <item name="windowActionModeOverlay">true</item>
+  </style>
+
+  <style name="IntelliticksWebViewTheme.Fullscreen" parent="IntelliticksWebViewTheme">
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <style name="IntelliticksWebViewTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/finestWhite</item>
+    <item name="colorPrimaryDark">@color/finestGray</item>
+    <item name="colorAccent">@color/finestBlack</item>
+    <item name="android:textColorPrimary">@color/finestBlack</item>
+    <item name="android:textColorSecondary">@color/finestSilver</item>
+    <item name="windowActionModeOverlay">true</item>
+  </style>
+
+  <style name="IntelliticksWebViewTheme.Light.Fullscreen" parent="IntelliticksWebViewTheme.Light">
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <declare-styleable name="ShadowLayout">
+    <attr format="dimension" name="slCornerRadius"/>
+    <attr format="dimension" name="slShadowSize"/>
+    <attr format="color" name="slShadowColor"/>
+    <attr format="dimension" name="slDx"/>
+    <attr format="dimension" name="slDy"/>
+  </declare-styleable>
+
+</resources>
