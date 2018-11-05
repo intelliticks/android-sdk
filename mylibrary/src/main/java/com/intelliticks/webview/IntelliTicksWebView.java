@@ -117,8 +117,8 @@ public class IntelliTicksWebView {
 
     protected Boolean webViewSupportZoom;
     protected Boolean webViewMediaPlaybackRequiresUserGesture;
-   // protected Boolean webViewBuiltInZoomControls;
-   // protected Boolean webViewDisplayZoomControls;
+    protected Boolean webViewBuiltInZoomControls;
+    protected Boolean webViewDisplayZoomControls;
     protected Boolean webViewAllowFileAccess;
     protected Boolean webViewAllowContentAccess;
     protected Boolean webViewLoadWithOverviewMode;
@@ -698,7 +698,7 @@ public class IntelliTicksWebView {
       return this;
     }
 
-    /*public Builder webViewBuiltInZoomControls(boolean webViewBuiltInZoomControls) {
+    public Builder webViewBuiltInZoomControls(boolean webViewBuiltInZoomControls) {
       this.webViewBuiltInZoomControls = webViewBuiltInZoomControls;
       return this;
     }
@@ -706,7 +706,7 @@ public class IntelliTicksWebView {
     public Builder webViewDisplayZoomControls(boolean webViewDisplayZoomControls) {
       this.webViewDisplayZoomControls = webViewDisplayZoomControls;
       return this;
-    }*/
+    }
 
     public Builder webViewAllowFileAccess(boolean webViewAllowFileAccess) {
       this.webViewAllowFileAccess = webViewAllowFileAccess;

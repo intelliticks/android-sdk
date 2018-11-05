@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.intelliticks.webview.IntelliTicksWebView;
+import com.intelliticks.webview.IntelliTicksWebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,9 +23,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         new IntelliTicksWebView.Builder(this)
+                .titleDefault("demo")
                 .initilizeKey("pSZJr5kbAY7jEwEtf_c")
                 .action("pricing")
+                .toolbarScrollFlags(0)
+                .webViewJavaScriptEnabled(true)
+                .webViewUseWideViewPort(true)
+                .webViewSupportZoom(true)
+                .webViewBuiltInZoomControls(true)
+                .webViewDisplayZoomControls(false)
+                .showSwipeRefreshLayout(false)
                  .loadWeb();
+
+
 
     }
 }
