@@ -436,7 +436,7 @@ public class IntelliTicksWebViewActivity extends AppCompatActivity
         mimeType = builder.mimeType;
         encoding = builder.encoding;
         data = builder.data;
-        url = "https://app.intelliticks.com/landing/";
+        url = "https://app.intelliticks.com/mobile/";
         initilizeKey = builder.initilizeKey;
         action = builder.action;
         query_param = builder.query_param;
@@ -793,9 +793,9 @@ public class IntelliTicksWebViewActivity extends AppCompatActivity
 
             String url_str;
             if (query_param != null) {
-                url_str = url + initilizeKey + "/" + action + "?" + query_param;
+                url_str = url + initilizeKey + "/event/" + action + "?" + query_param;
             } else {
-                url_str = url + initilizeKey + "/" + action;
+                url_str = url + initilizeKey + "/event/" + action;
             }
 
             webView.loadUrl(url_str);
