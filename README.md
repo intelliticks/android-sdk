@@ -1,22 +1,20 @@
 # Intelliticks
 
-#### Beautiful and customizable Android Activity that shows web pages within an app.
-
-* Builder pattern
-* Material design & Pre-made icons
-* Webview listeners
-* Custom themes & Custom transition animations
-* Support collapsing toolbar & contextual actionbar
-* SwipeRefreshLayout & Progressbar
-* Device rotation
-* Gradient divider
-* Custom typeface & translation
-* Supports Right to Left
 ## Getting started
 
 #### Gradle Dependency (jcenter)
 
-Easily reference the library in your Android projects using this dependency in your module's `build.gradle` file.
+Add the repository below in your Project's `build.gradle` in the repositories section. After adding it will look like
+```java
+allprojects {
+    repositories {
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+```
+And reference the library using this dependency in your module's `build.gradle` file.
 
 ```java
 dependencies {
@@ -26,8 +24,8 @@ dependencies {
 
 #### Manifest Settings
 
-IntelliTicksWebView is basically and Android activity with webview, toolbar and etc.  
-You have to add IntelliTicksWebViewActivity in your `AndroidManifest.xml`
+IntelliTicksWebView is basically and Android activity.  
+You have to add IntelliTicksWebViewActivity in your `AndroidManifest.xml` along with permission to use internet.
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -39,13 +37,15 @@ You have to add IntelliTicksWebViewActivity in your `AndroidManifest.xml`
             android:theme="@style/IntelliticksWebViewTheme.Light" />
             
             #### Basic WebView
+```
+
+Use the sample code below to open the activity
 
 ```java
 new IntelliTicksWebView.Builder(this)
-                .titleDefault("demo")
-                .initilizeKey("pSZJr5kbAY7jEwEtf_c")  //set key
-                .action("pricing")  //set action
-                .query("")  //set parameter key=value&key=value&key=value
+                .titleDefault("Talk to us")//title of topbar
+                .initilizeKey("<your account key>")//Please contact us for account key
+                .action("help")//Contact us to know the action for your app.
                 .toolbarScrollFlags(0)
                 .webViewJavaScriptEnabled(true)
                 .webViewUseWideViewPort(true)
@@ -53,4 +53,6 @@ new IntelliTicksWebView.Builder(this)
                 .webViewBuiltInZoomControls(true)
                 .webViewDisplayZoomControls(false)
                 .showSwipeRefreshLayout(false)
-                 .loadWeb();
+                .toolbarColor(getResources().getColor(R.color.Color_Red))//color of topbar
+                .titleColor(getResources().getColor(R.color.Color_White))//color of title
+                .loadWeb();
