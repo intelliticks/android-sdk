@@ -20,7 +20,7 @@ Easily reference the library in your Android projects using this dependency in y
 
 ```java
 dependencies {
-    compile 'com.github.deyrakesh123:Intelliticks:1.1'
+    compile 'com.github.intelliticks:android-sdk:0.1'
 }
 ```
 
