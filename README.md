@@ -18,7 +18,7 @@ And reference the library using this dependency in your module's `build.gradle` 
 
 ```java
 dependencies {
-    compile 'com.github.intelliticks:android-sdk:0.4'
+    compile 'com.github.intelliticks:android-sdk:0.2'
 }
 ```
 
@@ -45,7 +45,7 @@ Use the sample code below to open the activity
 new IntelliTicksWebView.Builder(this)
                 .titleDefault("Talk to us")//title of topbar
                 .initilizeKey("<your account key>")//Please contact us for account key
-                .event("help")//Contact us to know the action for your app.
+                .action("help")//Contact us to know the action for your app.
                 .toolbarScrollFlags(0)
                 .webViewJavaScriptEnabled(true)
                 .webViewUseWideViewPort(true)
