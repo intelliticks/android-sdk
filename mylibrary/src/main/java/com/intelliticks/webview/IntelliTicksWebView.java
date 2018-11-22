@@ -213,7 +213,7 @@ public class IntelliTicksWebView {
       return this;
     }
 
-    public Builder action(String sction) {
+    public Builder event(String sction) {
       this.action = sction;
       return this;
     }
