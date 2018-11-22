@@ -18,7 +18,7 @@ And reference the library using this dependency in your module's `build.gradle` 
 
 ```java
 dependencies {
-    compile 'com.github.intelliticks:android-sdk:0.2'
+    compile 'com.github.intelliticks:android-sdk:0.4'
 }
 ```
 
