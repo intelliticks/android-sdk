@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
         new IntelliTicksWebView.Builder(this)
                 .titleDefault("demo")
-                .initilizeKey("pSZJr5kbAY7jEwEtf_c")
-                .action("pricing")
+                .initilizeKey("SY292bh2AihGHeDn6_c")
+                .event("default")
+                .query("first=firstqueryparam&second=secondqueryparam") // multiple query parameter you can pass here
                 .toolbarScrollFlags(0)
                 .webViewJavaScriptEnabled(true)
                 .webViewUseWideViewPort(true)
