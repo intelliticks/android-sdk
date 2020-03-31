@@ -45,7 +45,8 @@ Use the sample code below to open the activity
 new IntelliTicksWebView.Builder(this)
                 .titleDefault("Talk to us")//title of topbar
                 .initilizeKey("<your account key>")//Please contact us for account key
-                .action("help")//Contact us to know the action for your app.
+                .event("default")//Contact us to know the action for your app.
+                .query("name=Harshit&source=android")//option query string to send additional parameters
                 .toolbarScrollFlags(0)
                 .webViewJavaScriptEnabled(true)
                 .webViewUseWideViewPort(true)
